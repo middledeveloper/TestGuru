@@ -2,8 +2,10 @@
 
 one:
   name: MyString
+  login: MyString
   role: 1
 
 two:
   name: MyString
+  login: MyString
   role: 1

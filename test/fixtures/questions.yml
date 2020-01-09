@@ -2,10 +2,10 @@
 
 one:
   text: MyString
-  test_id: 1
   number: 1
+  test: one
 
 two:
   text: MyString
-  test_id: 1
   number: 1
+  test: two
