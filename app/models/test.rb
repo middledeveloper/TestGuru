@@ -4,8 +4,10 @@ class Test < ApplicationRecord
   belongs_to :category
 
   def self.by_category_title_repo(category_title)
-    id_value = Category.where(title: category_title).first
-    repo = Test.where(category_id: id_value).order('id DESC').pluck(:title)
-    # repo.each { |test| puts test }
+    Test
+      .joins(:category)
+      .where(categories: { title: category_title })
+      .order('tests.id DESC')
+      .pluck(:title)
   end
 end

@@ -2,7 +2,9 @@
 
 class User < ApplicationRecord
   def history(test_level)
-    tests_ids = UsersHistory.where(user_id: id).pluck(:test_id)
-    repo = Test.where('id IN (?) AND level = ?', tests_ids, test_level)
+    Test
+      .joins('JOIN users_histories ON test_id = tests.id')
+      .where(level: test_level)
+      .where(users_histories: { user_id: id })
   end
 end
