@@ -2,7 +2,7 @@
 
 class TestsController < ApplicationController
   def index
-    render plain: Test.all.inspect
+    @tests = Test.all
   end
 
   def show

@@ -1,3 +1,8 @@
-<li>
-  <%= question.text %>
-</li>
+<tr>
+  <td><%= question.text %></td>
+  <td><%= link_to 'Edit', edit_question_path(question) %></td>
+  <td><%= link_to 'Delete',
+          question_path(question),
+          method: 'delete',
+          data: { confirm: 'Delete it?' } %></td>
+</tr>

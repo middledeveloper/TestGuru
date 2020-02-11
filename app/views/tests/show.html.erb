@@ -10,5 +10,14 @@
 </p>
 <p>
   <strong>Questions:</strong>
-  <%= render @test.questions %>
+  <table>
+    <tr>
+      <th>Text</th>
+      <th>Actions</th>
+    </tr>
+    <%= render @test.questions %>
+  </table>
 </p>
+
+<%= link_to 'Back', tests_path %> |
+<%= link_to 'Add Question', new_test_question_path(@test) %>
