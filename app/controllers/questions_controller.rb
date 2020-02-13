@@ -7,7 +7,7 @@ class QuestionsController < ApplicationController
   before_action :define_question, only: %i[show edit update destroy]
 
   def index
-    @questions = @test.questions.all
+    @questions = @test.questions
   end
 
   def new
@@ -16,9 +16,7 @@ class QuestionsController < ApplicationController
 
   def show; end
 
-  def edit
-    @test = @question.test
-  end
+  def edit; end
 
   def create
     question = @test.questions.new(question_params)
