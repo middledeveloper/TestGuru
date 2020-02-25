@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 class Test < ApplicationRecord
-  belongs_to :category
-  belongs_to :author, class_name: 'User', foreign_key: 'author_id'
+  belongs_to :category, optional: true
+  belongs_to :author, class_name: 'User', foreign_key: 'author_id', optional: true
   has_many :questions
 
-  has_many :tests_users
-  has_many :users, through: :tests_users
+  has_many :test_passages
+  has_many :users, through: :test_passages
 
   scope :simple, -> { where(level: [0..1]) }
   scope :middle, -> { where(level: [2..4]) }

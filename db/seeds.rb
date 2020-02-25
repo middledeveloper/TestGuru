@@ -31,10 +31,3 @@ Answer.create!(text: 'Programming language', correct: true, question_id: questio
 Answer.create!(text: 'Oil', correct: false, question_id: question_rails_back_2.id)
 Answer.create!(text: 'Animal', correct: false, question_id: question_rails_back_2.id)
 Answer.create!(text: 'Ruby on Rails framework', correct: true, question_id: question_rails_back_2.id)
-
-TestsUser.create!(user_id: user_bob.id, test_id: test_back_rails.id, progress: 100)
-TestsUser.create!(user_id: user_bob.id, test_id: test_front_rails.id, progress: 25)
-TestsUser.create!(user_id: user_bob.id, test_id: test_back_net_core.id, progress: 40)
-TestsUser.create!(user_id: user_rob.id, test_id: test_back_rails.id, progress: 17)
-TestsUser.create!(user_id: user_rob.id, test_id: test_front_rails.id, progress: 71)
-TestsUser.create!(user_id: user_rob.id, test_id: test_back_net_core.id, progress: 16)
