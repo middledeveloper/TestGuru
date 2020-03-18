@@ -20,7 +20,7 @@ class TestPassage < ApplicationRecord
   end
 
   def passed?
-    calculate_percent > TEST_PASSED_PERCENT_VALUE
+    calculate_percent >= TEST_PASSED_PERCENT_VALUE
   end
 
   def calculate_percent
