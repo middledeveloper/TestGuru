@@ -1,9 +1,9 @@
-<%= if @user_correct_answers_percent_value >= @test_passed_percent_value %>
-    <h1>The <%= @test_passage.test.title %> Test completed!</h1>
-    <h2>Result: <span class="text-success"><%= @correct_answers_percent %>%</span></h2>
+<% if @test_passage.passed? %>
+    <h1>The <% @test_passage.test.title %> Test passed!</h1>
+    <h2>Result: <span style="color: green;"><%= @test_passage.calculate_percent %>%</span></h2>
 <% else %>
-    <h1>The <%= @test_passage.test.title %> Test not passed: too many errors...</h1>
-    <h2>Result: <span class="text-danger"><%= @correct_answers_percent %>%</span></h2>
+    <h1>The <% @test_passage.test.title %> Test not passed...</h1>
+    <h2>Result: <span style="color: red;"><%= @test_passage.calculate_percent %>%</span></h2>
 <% end %>
 
 <%= link_to 'All tests', tests_path %>
