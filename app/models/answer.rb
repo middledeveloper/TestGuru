@@ -12,7 +12,8 @@ class Answer < ApplicationRecord
   private
 
   def validate_max
-    if question.answers.size >= 4
+    question_count = question.nil? ? 0 : question.answers.size
+    if question_count >= 4
       errors.add(:Quantity, 'Question must have 4 answers max!')
     end
   end

@@ -6,15 +6,13 @@ class QuestionsController < ApplicationController
   before_action :define_test, only: %i[index new create]
   before_action :define_question, only: %i[show edit update destroy]
 
-  def index
-    @questions = @test.questions
-  end
-
   def new
     @question = @test.questions.new
   end
 
-  def show; end
+  def show
+    @answers = @question.answers
+  end
 
   def edit; end
 
