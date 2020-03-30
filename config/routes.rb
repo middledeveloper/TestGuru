@@ -1,16 +1,18 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'sessions/new'
   get 'users/new'
+  get 'sessions/new'
+  get 'sessions/destroy'
 
   root 'tests#index'
 
   get :signup, to: 'users#new'
-  get :login, to: 'sessions#new'
+  get :signin, to: 'sessions#new'
+  get :logout, to: 'sessions#destroy'
 
   resources :users, only: :create
-  resources :sessions, only: :create
+  resources :sessions, only: %i[new create destroy]
 
   resources :tests do
     resources :questions, shallow: true, except: :index do

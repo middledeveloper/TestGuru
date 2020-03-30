@@ -10,8 +10,9 @@ class ApplicationController < ActionController::Base
 
   def authenticate_user!
     unless current_user
+      session[:request_url] = request.fullpath
       # alert here means flash message
-      redirect_to login_path, alert: 'Are you a Guru? Verify it!'
+      redirect_to signin_path, alert: 'Are you a Guru? Verify it!'
     end
 
     # this cookie available for JS

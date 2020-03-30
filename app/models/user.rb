@@ -9,9 +9,11 @@ class User < ApplicationRecord
 
   scope :history, ->(user, level) { user.tests.where(level: level) }
 
+  validates :email, uniqueness: true, format: /\A[^@\s]+@([^@.\s]+\.)+[^@.\s]+\z/
+
   has_secure_password
 
   def test_passage(test)
-    test_passages.find_by(test_id: test.id).order(id: :desc)
+    test_passages.order(id: :desc).find_by(test_id: test.id)
   end
 end
