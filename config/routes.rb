@@ -1,18 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'users/new'
-  get 'sessions/new'
-  get 'sessions/destroy'
-
   root 'tests#index'
 
-  get :signup, to: 'users#new'
-  get :signin, to: 'sessions#new'
-  get :logout, to: 'sessions#destroy'
-
-  resources :users, only: :create
-  resources :sessions, only: %i[new create destroy]
+  devise_for :users, path: :gurus, path_names: { sign_in: :login, sign_out: :logout }
 
   resources :tests do
     resources :questions, shallow: true, except: :index do
