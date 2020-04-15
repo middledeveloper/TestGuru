@@ -18,6 +18,8 @@ class Admin::TestsController < Admin::BaseController
   def create
     @test = Test.new(test_params)
 
+    @test.author_id = current_user.id if current_user.is_a?(Admin)
+
     if @test.save
       redirect_to @test
     else
