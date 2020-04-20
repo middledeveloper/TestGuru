@@ -267,3 +267,99 @@ ru:
       long: "%d %B %Y, %H:%M"
       short: "%d %b, %H:%M"
     pm: вечера
+
+
+
+
+
+
+
+  helpers:
+    select:
+      prompt: "Выберите значение"
+    submit:
+      test:
+        create: "Создать тест"
+        update: "Обновить тест"
+    label:
+      test:
+        title: "Наименование"
+        level: "Уровень"
+        category_id: "Категория"
+
+  shared:
+    errors:
+      header:
+        few: "Обнаружено %{count} ошибки"
+        many: "Обнаружено %{count} ошибок"
+        one: "Обнаружена %{count} ошибка"
+        other: "Обнаружено %{count} ошибки"
+
+  layouts:
+    nav:
+      welcome: "Добро пожаловать, %{name} Гуру!"
+      log_out: "Выйти"
+      log_in: "Вход"
+      sign_up: "Регистрация"
+
+  tests:
+    index:
+      header: "Возможные тесты"
+      title: "Наименование"
+      level: "Уровень"
+      questions: "Вопросов"
+    test:
+      start: "Начать"
+
+  admin:
+    nav:
+      title: "Панель администратора TestGuru"
+      welcome: "Добро пожаловать, %{email_address} Гуру!"
+      logout: "Выйти"
+    questions:
+      question:
+        info: "Инфо"
+        edit: "Правка"
+        remove: "Удалить"
+        confirm: "Действительно удалить?"
+    tests:
+      show:
+        header: "Настройка теста"
+        title: "Наименование"
+        level: "Уровень"
+        questions: "Вопросы"
+        question_text: "Текст вопроса"
+        question_actions: "Действия"
+        add_question: "Добавить вопрос"
+        back: "К списку тестов"
+      create:
+        success: "Тест завершен!"
+      index:
+        create: "Создать тест"
+        header: "Возможные тесты"
+        title_column: "Наименование"
+        level_column: "Уровень"
+        questions_column: "Вопросы"
+        actions_column: "Действия"
+      test:
+        info: "Инфо"
+        edit: "Правка"
+        remove: "Удалить"
+        confirm: "Действительно удалить?"
+
+  tests_mailer:
+    completed_test:
+      subject: "Вы только что прошли тест!"
+
+  test_passages:
+    show:
+      header: "Проходим тест %{title}"
+      counter: "%{current} из %{total} вопросов"
+      next_question: "Следующий вопрос"
+    update:
+      completed: "Тест завершен!"
+    result:
+      header: "Тест %{title} завершен"
+      success_result: "Отлично! Тест успешно пройден (%{percentage}%)!"
+      fail_result: "Ужасно! Тест провален (%{percentage}%)!"
+      back: "Вернуться к списку тестов"
