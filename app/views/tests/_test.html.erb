@@ -2,6 +2,5 @@
   <td><%= test.title %></td>
   <td><%= test.level %></td>
   <td><%= pluralize(questions_count(test), 'item') %></td>
-  <td><%= link_to 'Info', test_path(test) %></td>
   <td><%= button_to 'Start', start_test_path(test) %>
 </tr>

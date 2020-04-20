@@ -1,0 +1,15 @@
+<%= form_with model: [:admin, @test, @question], local: true do |form| %>
+  <table>
+      <tr>
+        <%= render 'shared/errors', resource: @question %>
+
+        <td>
+            <%= form.label :text %>
+            <%= form.text_field :text %>
+        </td>
+        <td>
+             <%= form.submit %>
+        </td>
+      </tr>
+  </table>
+<% end %>
