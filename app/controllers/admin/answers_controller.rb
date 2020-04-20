@@ -16,7 +16,7 @@ class Admin::AnswersController < Admin::BaseController
     @answer = Answer.new(answer_params)
 
     if @answer.save
-      redirect_to @snswer, notice: 'Answer was created.'
+      redirect_to @answer, notice: 'Answer was created.'
     else
       render :new
     end
@@ -24,7 +24,7 @@ class Admin::AnswersController < Admin::BaseController
 
   def update
     if @answer.update(answer_params)
-      redirect_to @snswer
+      redirect_to @answer
     else
       render :edit
     end

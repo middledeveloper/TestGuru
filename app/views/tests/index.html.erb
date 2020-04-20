@@ -2,14 +2,14 @@
   <%= flash_message(:info) %>
 <% end %>
 
-<h1>Test repository</h1>
+<h1><%= t('.header') %></h1>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Level</th>
-    <th>Questions count</th>
-    <th>Start test</th>
+    <th><%= t('.title') %></th>
+    <th><%= t('.level') %></th>
+    <th><%= t('.questions') %></th>
+    <th></th>
   </tr>
   <%= render @tests %>
 </table>
