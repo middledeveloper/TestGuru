@@ -2,14 +2,18 @@
   <%= flash_message(:info) %>
 <% end %>
 
-<h1><%= t('.header') %></h1>
+<div class="mt-3">
+  <h1><%= t('.header') %></h1>
 
-<table>
-  <tr>
-    <th><%= t('.title') %></th>
-    <th><%= t('.level') %></th>
-    <th><%= t('.questions') %></th>
-    <th></th>
-  </tr>
-  <%= render @tests %>
-</table>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th class="col"><%= t('.title') %></th>
+        <th class="col"><%= t('.level') %></th>
+        <th class="col"><%= t('.questions') %></th>
+        <th class="col"></th>
+      </tr>
+    </thead>
+    <%= render @tests %>
+  </table>
+</div>
