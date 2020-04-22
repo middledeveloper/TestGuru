@@ -87,3 +87,6 @@ en:
       success_result: "Great! Test completed successfully (%{percentage}%)!"
       fail_result: "Awful! Test not passed (%{percentage}%)!"
       back: "Get back to test repo"
+    gist:
+      success: 'Gist saved successfully!'
+      failure: 'Gist was not saved!'

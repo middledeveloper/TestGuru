@@ -364,3 +364,6 @@ ru:
       success_result: "Отлично! Тест успешно пройден (%{percentage}%)!"
       fail_result: "Ужасно! Тест провален (%{percentage}%)!"
       back: "Вернуться к списку тестов"
+    gist:
+      success: 'Gist успешно сохранён!'
+      failure: 'Gist не удалось сохранить!'
