@@ -273,6 +273,7 @@ ru:
 
 
 
+  gist_desc: "Вопрос о %{desc} от TestGuru"
 
   helpers:
     select:
@@ -365,5 +366,6 @@ ru:
       fail_result: "Ужасно! Тест провален (%{percentage}%)!"
       back: "Вернуться к списку тестов"
     gist:
-      success: 'Gist успешно сохранён!'
-      failure: 'Gist не удалось сохранить!'
+      success: "Gist успешно сохранён!"
+      success_with_html: "Gist успешно сохранён: %{href}"
+      failure: "Gist не удалось сохранить!"

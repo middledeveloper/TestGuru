@@ -1,4 +1,6 @@
 en:
+  gist_desc: "Question about %{desc} from TestGuru"
+
   helpers:
     select:
       prompt: "Please select"
@@ -89,4 +91,5 @@ en:
       back: "Get back to test repo"
     gist:
       success: 'Gist saved successfully!'
+      success_with_html: "Gist saved successfully: %{href}"
       failure: 'Gist was not saved!'
