@@ -2,19 +2,38 @@
   <%= flash_message(:info) %>
 <% end %>
 
-<h1><%= t('.header') %></h1>
+<div class="col-12">
+  <h1><%= t('.header') %></h1>
 
-<p>
-  <%= link_to t('.create'), new_admin_test_path %>
-</p>
+  <p>
+    <%= link_to t('.create'), new_admin_test_path %>
+  </p>
 
-<table>
-  <tr>
-    <th><%= t('.title_column') %></th>
-    <th><%= t('.level_column') %></th>
-    <th><%= t('.questions_column') %></th>
-    <th colspan="3"><%= t('.actions_column') %></th>
-  </tr>
+  <table class="table">
+    <tr>
+      <th><%= t('.title_column') %></th>
+      <th><%= t('.level_column') %></th>
+      <th><%= t('.questions_column') %></th>
+      <th colspan="3"><%= t('.actions_column') %></th>
+    </tr>
 
-  <%= render @tests %>
-</table>
+    <%= render @tests %>
+  </table>
+</div>
+
+<div class="col-12 mt-10">
+  <h2><%= t('.gists_header') %></h2>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th><%= t('.gist_question') %></th>
+      <th><%= t('.gist_url') %></th>
+      <th><%= t('.gist_user') %></th>
+    </tr>
+    </thead>
+
+    <%= render @gists %>
+
+  </table>
+</div>

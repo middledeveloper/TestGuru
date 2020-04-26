@@ -67,6 +67,10 @@ en:
         level_column: "Level"
         questions_column: "Questions"
         actions_column: "Actions"
+        gists_header: "GitHub Gists"
+        gist_question: "Question"
+        gist_url: "Link"
+        gist_user: "User"
       test:
         info: "Info"
         edit: "Edit"
