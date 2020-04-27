@@ -273,6 +273,7 @@ ru:
 
 
 
+  gist_desc: "Вопрос о %{desc} от TestGuru"
 
   helpers:
     select:
@@ -342,6 +343,10 @@ ru:
         level_column: "Уровень"
         questions_column: "Вопросы"
         actions_column: "Действия"
+        gists_header: "GitHub Gists"
+        gist_question: "Вопрос"
+        gist_url: "Ссылка"
+        gist_user: "Пользователь"
       test:
         info: "Инфо"
         edit: "Правка"
@@ -364,3 +369,7 @@ ru:
       success_result: "Отлично! Тест успешно пройден (%{percentage}%)!"
       fail_result: "Ужасно! Тест провален (%{percentage}%)!"
       back: "Вернуться к списку тестов"
+    gist:
+      success: "Gist успешно сохранён!"
+      success_with_html: "Gist успешно сохранён: %{href}"
+      failure: "Gist не удалось сохранить!"

@@ -1,4 +1,6 @@
 en:
+  gist_desc: "Question about %{desc} from TestGuru"
+
   helpers:
     select:
       prompt: "Please select"
@@ -65,6 +67,10 @@ en:
         level_column: "Level"
         questions_column: "Questions"
         actions_column: "Actions"
+        gists_header: "GitHub Gists"
+        gist_question: "Question"
+        gist_url: "Link"
+        gist_user: "User"
       test:
         info: "Info"
         edit: "Edit"
@@ -87,3 +93,7 @@ en:
       success_result: "Great! Test completed successfully (%{percentage}%)!"
       fail_result: "Awful! Test not passed (%{percentage}%)!"
       back: "Get back to test repo"
+    gist:
+      success: 'Gist saved successfully!'
+      success_with_html: "Gist saved successfully: %{href}"
+      failure: 'Gist was not saved!'
