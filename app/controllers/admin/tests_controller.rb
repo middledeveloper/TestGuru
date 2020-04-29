@@ -21,7 +21,7 @@ class Admin::TestsController < Admin::BaseController
     @test.author_id = current_user.id if current_user.is_a?(Admin)
 
     if @test.save
-      redirect_to @test
+      redirect_to [:admin, @test]
     else
       render :new
     end
@@ -29,7 +29,7 @@ class Admin::TestsController < Admin::BaseController
 
   def update
     if @test.update(test_params)
-      redirect_to @test
+      redirect_to [:admin, @test]
     else
       render :edit
     end
