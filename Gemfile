@@ -34,6 +34,7 @@ gem 'rails-i18n', '~> 6.0.0'
 # simple UI
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
+gem 'octicons_helper'
 # use for REST API
 gem 'faraday'
 gem 'octokit', '~> 4.0'
