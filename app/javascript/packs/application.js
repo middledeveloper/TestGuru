@@ -9,6 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("utilities/sorting")
 require("utilities/comparefields")
+require("utilities/form_inline")
 
 //= require jquery3
 //= require popper
