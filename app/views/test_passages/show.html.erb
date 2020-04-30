@@ -1,12 +1,13 @@
 <h1><%= t('.header', title: @test_passage.test.title) %></h1>
 
-<b><%= @test_passage.current_question.text %></b><br />
 <div class="progress-bar-container">
   <%= content_tag :div,
       '',
       class: 'progress-bar',
       data: { percent: @test_passage.passage_percent } %>
 </div>
+
+<b><%= @test_passage.current_question.text %></b><br />
 
 <i>
   <%=

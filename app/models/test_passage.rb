@@ -24,7 +24,8 @@ class TestPassage < ApplicationRecord
   end
 
   def result_percent
-    self.correct_questions / self.test.questions.count * 100
+    percent = self.correct_questions.to_f / self.test.questions.count.to_f * 100
+    percent.to_i
   end
 
   def passage_percent
