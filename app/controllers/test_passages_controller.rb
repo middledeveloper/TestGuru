@@ -24,8 +24,7 @@ class TestPassagesController < ApplicationController
     service = GistQuestionService.new(question)
     result = service.call
 
-    # flash_options = if result.success?
-    flash_options = if result.html_url?
+    flash_options = if service.success?
                       current_user.gists.create(question_id: question.id, link: result.html_url)
                       { notice: t('.success_with_html', href: result.html_url) }
                     else

@@ -12,7 +12,7 @@ class TestPassage < ApplicationRecord
 
   def completed?
     current_question.nil?
- end
+  end
 
   def accept!(answer_ids)
     self.correct_questions += 1 if correct_answer?(answer_ids)
@@ -20,11 +20,16 @@ class TestPassage < ApplicationRecord
   end
 
   def passed?
-    calculate_percent >= TEST_PASSED_PERCENT_VALUE
+    result_percent >= TEST_PASSED_PERCENT_VALUE
   end
 
-  def calculate_percent
-    self.correct_questions / self.test.questions.count * 100
+  def result_percent
+    percent = self.correct_questions.to_f / self.test.questions.count.to_f * 100
+    percent.to_i
+  end
+
+  def passage_percent
+    (self.test.questions.index(current_question) + 1) * 100 / self.test.questions.count
   end
 
   private

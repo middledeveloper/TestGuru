@@ -352,6 +352,8 @@ ru:
         edit: "Правка"
         remove: "Удалить"
         confirm: "Действительно удалить?"
+      form_inline:
+        submit: "Ok"
 
   tests_mailer:
     completed_test:

@@ -2,11 +2,11 @@
 
 <% if @test_passage.passed? %>
   <h2 style="color: green">
-    <%= t('.success_result', percentage: @test_passage.calculate_percent) %>
+    <%= t('.success_result', percentage: @test_passage.result_percent) %>
   </h2>
 <% else %>
   <h2 style="color: red">
-    <%= t('.fail_result', percentage: @test_passage.calculate_percent) %>
+    <%= t('.fail_result', percentage: @test_passage.result_percent) %>
   </h2>
 <% end %>
 
