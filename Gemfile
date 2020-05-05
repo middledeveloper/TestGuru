@@ -25,8 +25,6 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# use ENV file for token
-gem 'dotenv-rails', groups: %i[development test]
 # use Devise for authorization
 gem 'devise', '~> 4.0'
 # application localization
@@ -48,6 +46,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  # use ENV file for token
+  gem 'dotenv-rails'
 end
 
 group :development do
