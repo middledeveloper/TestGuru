@@ -8,6 +8,6 @@ class EmailMessagesMailer < ApplicationMailer
     @feedback_name = email_message.name
     @feedback_text = email_message.text
 
-    mail to "#{ENV['SMTP_USERNAME']}@gmail.com"
+    mail to: "#{ENV['SMTP_USERNAME']}@gmail.com"
   end
 end
