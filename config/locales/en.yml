@@ -83,6 +83,10 @@ en:
     completed_test:
       subject: "You just completed the test!"
 
+  email_messages_mailer:
+    feedback:
+      subject: "Message from nafanasev.herokuapp.com"
+
   test_passages:
     show:
       header: "%{title} test passage"

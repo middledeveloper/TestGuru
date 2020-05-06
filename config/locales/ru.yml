@@ -359,6 +359,10 @@ ru:
     completed_test:
       subject: "Вы только что прошли тест!"
 
+  email_messages_mailer:
+    feedback:
+      subject: "Сообщение с сайта nafanasev.herokuapp.com"
+
   test_passages:
     show:
       header: "Проходим тест %{title}"
