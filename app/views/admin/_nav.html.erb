@@ -8,6 +8,7 @@
     <% else %>
         <%= link_to t('.sign_up'), new_user_registration_path %> |
         <%= link_to t('.log_in'), user_session_path %>
-    <% end %>
+    <% end %> |
+    <%= link_to t('.contacts'), email_messages_index_path %>
   </span>
 </nav>
