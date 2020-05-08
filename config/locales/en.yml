@@ -90,6 +90,8 @@ en:
       subject: "Message from nafanasev.herokuapp.com"
 
   email_messages:
+    create:
+      sent: "Сообщение успешно отправлено"
     index:
       header: "Feedback"
       phone: "Or you can call +0(000)000-00-00"
@@ -101,6 +103,7 @@ en:
       header: "%{title} test passage"
       counter: "%{current} of %{total} questions"
       next_question: "Next question"
+      not_ready: "Test is not ready yeat"
     update:
       completed: "Test completed!"
     result:

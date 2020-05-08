@@ -30,14 +30,6 @@ ActiveRecord::Schema.define(version: 2020_05_07_093327) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "email_messages", force: :cascade do |t|
-    t.string "email", null: false
-    t.string "name"
-    t.text "text", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "gists", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "question_id", null: false

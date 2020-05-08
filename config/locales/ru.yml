@@ -366,6 +366,8 @@ ru:
       subject: "Сообщение с сайта nafanasev.herokuapp.com"
 
   email_messages:
+    create:
+      sent: "Сообщение успешно отправлено"
     index:
       header: "Обратная связь"
       phone: "Или Вы можете позвонить по номеру +0(000)000-00-00"
@@ -377,6 +379,7 @@ ru:
       header: "Проходим тест %{title}"
       counter: "%{current} из %{total} вопросов"
       next_question: "Следующий вопрос"
+      not_ready: "Тест не готов к прохождению"
     update:
       completed: "Тест завершен!"
     result:

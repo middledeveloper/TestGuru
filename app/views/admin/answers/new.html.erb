@@ -2,5 +2,7 @@
 
 <p><%= @question.text %></p>
 
+<%= render 'shared/errors', resource: @answer %>
+
 <%= render 'form' %>
 <%= link_to 'Back', admin_question_path(@question) %>

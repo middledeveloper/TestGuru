@@ -29,7 +29,8 @@ class TestPassage < ApplicationRecord
   end
 
   def passage_percent
-    (self.test.questions.index(current_question) + 1) * 100 / self.test.questions.count
+    # current question index + 1 removed due progress bar incorrect visualization
+    self.test.questions.index(current_question) * 100 / self.test.questions.count
   end
 
   private
@@ -43,6 +44,8 @@ class TestPassage < ApplicationRecord
   end
 
   def correct_answer?(answer_ids)
+    return false if answer_ids.nil?
+
     correct_answers_count = correct_answers.count
 
     (correct_answers_count == correct_answers.where(id: answer_ids).count) &&

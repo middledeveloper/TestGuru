@@ -10,7 +10,7 @@ class EmailMessagesController < ApplicationController
 
     if @message.valid?
       EmailMessagesMailer.feedback(@message).deliver_now
-      redirect_to email_messages_index_path, notice: 'Message sent successfully.'
+      redirect_to email_messages_index_path, notice: t('.sent')
     else
       render :index
     end
