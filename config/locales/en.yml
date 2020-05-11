@@ -26,6 +26,7 @@ en:
       log_out: "Logout"
       log_in: "Login"
       sign_up: "SignUp"
+      contacts: "Contacts"
       admin_panel: "Admin panel"
 
   tests:
@@ -42,6 +43,7 @@ en:
       title: "TestGuru Admin Panel"
       welcome: "Welcome, %{email_address} Guru!"
       logout: "Logout"
+      contacts: "Contacts"
     questions:
       question:
         info: "Info"
@@ -83,11 +85,25 @@ en:
     completed_test:
       subject: "You just completed the test!"
 
+  email_messages_mailer:
+    feedback:
+      subject: "Message from nafanasev.herokuapp.com"
+
+  email_messages:
+    create:
+      sent: "Сообщение успешно отправлено"
+    index:
+      header: "Feedback"
+      phone: "Or you can call +0(000)000-00-00"
+    form:
+      submit: "Send"
+
   test_passages:
     show:
       header: "%{title} test passage"
       counter: "%{current} of %{total} questions"
       next_question: "Next question"
+      not_ready: "Test is not ready yeat"
     update:
       completed: "Test completed!"
     result:

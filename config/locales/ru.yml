@@ -302,6 +302,7 @@ ru:
       log_out: "Выйти"
       log_in: "Вход"
       sign_up: "Регистрация"
+      contacts: "Контакты"
       admin_panel: "Панель Администратора"
 
   tests:
@@ -318,6 +319,7 @@ ru:
       title: "Панель администратора TestGuru"
       welcome: "Добро пожаловать, %{email_address} Гуру!"
       logout: "Выйти"
+      contacts: "Контакты"
     questions:
       question:
         info: "Инфо"
@@ -359,11 +361,25 @@ ru:
     completed_test:
       subject: "Вы только что прошли тест!"
 
+  email_messages_mailer:
+    feedback:
+      subject: "Сообщение с сайта nafanasev.herokuapp.com"
+
+  email_messages:
+    create:
+      sent: "Сообщение успешно отправлено"
+    index:
+      header: "Обратная связь"
+      phone: "Или Вы можете позвонить по номеру +0(000)000-00-00"
+    form:
+      submit: "Отправить"
+
   test_passages:
     show:
       header: "Проходим тест %{title}"
       counter: "%{current} из %{total} вопросов"
       next_question: "Следующий вопрос"
+      not_ready: "Тест не готов к прохождению"
     update:
       completed: "Тест завершен!"
     result:
