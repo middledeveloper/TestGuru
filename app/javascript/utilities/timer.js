@@ -10,7 +10,7 @@ document.addEventListener('turbolinks:load', function () {
 
 function startTimer(duration, control) {
     var timer = duration, minutes, seconds;
-    setInterval(function () {
+    var everySecond = setInterval(function () {
       if (--timer > 0) {
         minutes = parseInt(timer / 60, 10)
         seconds = parseInt(timer % 60, 10);
@@ -20,7 +20,7 @@ function startTimer(duration, control) {
 
         control.textContent = minutes + ":" + seconds;
       } else {
-        clearInterval()
+        clearInterval(everySecond)
         window.location.reload();
       }
     }, 1000);
