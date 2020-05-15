@@ -311,6 +311,7 @@ ru:
       title: "Наименование"
       level: "Уровень"
       questions: "Вопросов"
+      timer: "Таймер"
     test:
       start: "Начать"
 
@@ -336,6 +337,7 @@ ru:
         question_actions: "Действия"
         add_question: "Добавить вопрос"
         back: "К списку тестов"
+        timer: "Таймер"
       create:
         success: "Тест завершен!"
       index:
@@ -349,6 +351,7 @@ ru:
         gist_question: "Вопрос"
         gist_url: "Ссылка"
         gist_user: "Пользователь"
+        timer: "Таймер"
       test:
         info: "Инфо"
         edit: "Правка"
@@ -377,11 +380,13 @@ ru:
   test_passages:
     show:
       header: "Проходим тест %{title}"
+      timer_value: "Осталось на прохождение:"
       counter: "%{current} из %{total} вопросов"
       next_question: "Следующий вопрос"
       not_ready: "Тест не готов к прохождению"
+      completed: "Прохождение теста завершено"
     update:
-      completed: "Тест завершен!"
+      completed: "Прохождение теста завершено"
     result:
       header: "Тест %{title} завершен"
       success_result: "Отлично! Тест успешно пройден (%{percentage}%)!"

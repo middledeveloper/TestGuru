@@ -23,6 +23,16 @@ class TestPassage < ApplicationRecord
     result_percent >= TEST_PASSED_PERCENT_VALUE
   end
 
+  def expired?
+    # TestPassage created + Test.timer value < current time
+    (created_at + self.test.timer * 60) < Time.zone.now
+  end
+
+  def timer_seconds_left
+    # returns absolute value in seconds
+    (Time.zone.now - (created_at + self.test.timer * 60)).to_i.abs
+  end
+
   def result_percent
     percent = self.correct_questions.to_f / self.test.questions.count.to_f * 100
     percent.to_i

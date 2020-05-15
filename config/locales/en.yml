@@ -35,6 +35,7 @@ en:
       title: "Title"
       level: "Level"
       questions: "Questions"
+      timer: "Timer"
     test:
       start: "Start"
 
@@ -60,6 +61,7 @@ en:
         question_actions: "Actions"
         add_question: "Add question"
         back: "Back to test repo"
+        timer: "Timer"
       create:
         success: "Test was created!"
       index:
@@ -73,6 +75,7 @@ en:
         gist_question: "Question"
         gist_url: "Link"
         gist_user: "User"
+        timer: "Timer"
       test:
         info: "Info"
         edit: "Edit"
@@ -101,11 +104,13 @@ en:
   test_passages:
     show:
       header: "%{title} test passage"
+      timer_value: "Time left:"
       counter: "%{current} of %{total} questions"
       next_question: "Next question"
       not_ready: "Test is not ready yeat"
+      completed: "Test passage completed"
     update:
-      completed: "Test completed!"
+      completed: "Test passage completed!"
     result:
       header: "%{title} test completed"
       success_result: "Great! Test completed successfully (%{percentage}%)!"
