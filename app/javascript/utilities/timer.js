@@ -5,7 +5,6 @@ document.addEventListener('turbolinks:load', function () {
     if (control && seconds_control) {
       var duration = seconds_control.textContent
       startTimer(duration, control);
-
     }
 })
 
@@ -21,6 +20,7 @@ function startTimer(duration, control) {
 
         control.textContent = minutes + ":" + seconds;
       } else {
+        clearInterval()
         window.location.reload();
       }
     }, 1000);
