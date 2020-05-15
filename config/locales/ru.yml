@@ -380,6 +380,7 @@ ru:
   test_passages:
     show:
       header: "Проходим тест %{title}"
+      timer_value: "Осталось на прохождение:"
       counter: "%{current} из %{total} вопросов"
       next_question: "Следующий вопрос"
       not_ready: "Тест не готов к прохождению"

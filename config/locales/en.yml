@@ -104,6 +104,7 @@ en:
   test_passages:
     show:
       header: "%{title} test passage"
+      timer_value: "Time left:"
       counter: "%{current} of %{total} questions"
       next_question: "Next question"
       not_ready: "Test is not ready yeat"
